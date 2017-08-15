@@ -1,4 +1,332 @@
-<!DOCTYPE html><html lang="zh-Hans"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>从需求到原型，产品该如何设计与思考？ | 雨无声</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">从需求到原型，产品该如何设计与思考？</h1><a id="logo" href="/.">雨无声</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> Start</i></a><a href="/archives/"><i class="fa fa-archive"> Archiv</i></a><a href="/about/"><i class="fa fa-user"> Über</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">从需求到原型，产品该如何设计与思考？</h1><div class="post-meta">Jul 10, 2017</div><div class="post-content"><p>当产品的需求产出以后，做为交互设计师，该如何将其转化为具体的功能？该如何思考？</p>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="-交互理论," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="当产品的需求产出以后，做为交互设计师，该如何将其转化为具体的功能？该如何思考？ 需求与原型之间有一堵墙？相信很多同行都和我有类似的经历，在设计小白的阶段，当需求整理好以后，直接就开始画原型了。">
+<meta name="keywords" content="-交互理论">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从需求到原型，产品该如何设计与思考？">
+<meta property="og:url" content="http://yoursite.com/2017/07/10/从需求到原型，产品该如何设计与思考？/index.html">
+<meta property="og:site_name" content="雨无声">
+<meta property="og:description" content="当产品的需求产出以后，做为交互设计师，该如何将其转化为具体的功能？该如何思考？ 需求与原型之间有一堵墙？相信很多同行都和我有类似的经历，在设计小白的阶段，当需求整理好以后，直接就开始画原型了。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/image_1/1.png">
+<meta property="og:image" content="http://yoursite.com/image_1/2.png">
+<meta property="og:image" content="http://yoursite.com/image_1/3.png">
+<meta property="og:image" content="http://yoursite.com/image_1/4.png">
+<meta property="og:updated_time" content="2017-08-14T01:29:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="从需求到原型，产品该如何设计与思考？">
+<meta name="twitter:description" content="当产品的需求产出以后，做为交互设计师，该如何将其转化为具体的功能？该如何思考？ 需求与原型之间有一堵墙？相信很多同行都和我有类似的经历，在设计小白的阶段，当需求整理好以后，直接就开始画原型了。">
+<meta name="twitter:image" content="http://yoursite.com/image_1/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/07/10/从需求到原型，产品该如何设计与思考？/"/>
+
+
+
+
+
+  <title>从需求到原型，产品该如何设计与思考？ | 雨无声</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">雨无声</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/10/从需求到原型，产品该如何设计与思考？/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="雨无声">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雨无声">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">从需求到原型，产品该如何设计与思考？</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-10T18:52:58+08:00">
+                2017-07-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>当产品的需求产出以后，做为交互设计师，该如何将其转化为具体的功能？该如何思考？</p>
 <h3 id="需求与原型之间有一堵墙？"><a href="#需求与原型之间有一堵墙？" class="headerlink" title="需求与原型之间有一堵墙？"></a>需求与原型之间有一堵墙？</h3><p>相信很多同行都和我有类似的经历，在设计小白的阶段，当需求整理好以后，直接就开始画原型了。<a id="more"></a>通过参考各种竞品的类似功能，东拼西凑，然后又发现与自身产品的功能不合适，回头再看需求，然后又对原型进行增删改。有时候会脑子里突然想起来某个灵感，觉得这样做更合适，但做完以后又可能不太满意，反反复复，效率低下。这实际就是因为没有进行严谨的设计思考，导致制作出来的原型图可能会遗漏某些功能，更重要的是<strong>很容易没有清晰严谨的系统逻辑性和结构性</strong>。这样的设计对开发来说很头疼，对用户来说更是灾难。功能设计已经不合理了，更无需谈用户体验。<br>需求和原型之间有一堵墙，如何跨过这堵墙呢？直接翻过去，可能会被绊倒，造成损伤；最好的方式是一步步拆解它，这个过程慢，但是稳固、踏实，这样才能从需求顺畅、严谨得过渡到原型。</p>
 <h3 id="设计规划：需求到原型之间的过渡？"><a href="#设计规划：需求到原型之间的过渡？" class="headerlink" title="设计规划：需求到原型之间的过渡？"></a>设计规划：需求到原型之间的过渡？</h3><p>拆解需求和原型之间这堵墙的过程，我们可以称之为设计规划。这个过程可以说是设计工作中的重中之重，其规划产物虽然不是最终的输出物，但也是非常重要的。这个过程需要我们通过思考和借助一些工具表达，经过深思熟虑、不断对比取舍，对产品的设计形成一个严谨而又系统的规划方案。最后，我们只不过是将一个成熟的方案通过原型图表现出来而已。<br>那设计规划过程中，具体有哪些方法呢？我感觉可以总结为两个过程、一个思考。两个过程分为：<strong>组织信息架构</strong>、<strong>设定任务流程</strong>；一个思考是说要通过<strong>思考用户场景</strong>的方法，来帮助自己更好的整理完善前面两个过程，从而制作出严谨而又系统的交互原型。<br><img src="/image_1/1.png" alt="image"></p>
 <h4 id="过程一：组织信息架构"><a href="#过程一：组织信息架构" class="headerlink" title="过程一：组织信息架构"></a>过程一：组织信息架构</h4><p>第一个过程：组织信息架构。我们设计的产品必然对应着实体对象，这个实体对象又会有各种属性和分类（结合实际生活，对这个实体对象的属性和分类进行分析）。以搜索为例，搜索对应的实体对象可以看成是一个个搜索结果，搜索结果又有网页、视频、图片等不同分类，同时图片等搜索结果也可以看成一个实体对象，对应着有格式、分辨率等属性。所谓的组织信息架构，就是将这些实体对象进行系统的组织、划分、归类，从而对产品涉及到的信息有一个系统的认知和整理。<br>如下图所示，以在线购买速达水果生鲜为例，最重要的两个实体对象就是水果和水果店。<br><img src="/image_1/2.png" alt="image"></p>
@@ -10,4 +338,356 @@
 <p>站在用户的角度去思考，在完成任务的流程过程中哪些信息是非常重要的，能够让我们明确信息在展示上的重要程度来进行组织分类。比如在线购买水果时，水果的名称、价格、水果店的评价、离用户的距离是相对重要的信息，而该水果店的联系方式、水果的产地则是相对次要的信息，可以归纳到深一级的页面展示。</p>
 <p>站在用户的角度去思考，用户最常使用的功能是什么？能够让我们明确哪些功能可能需要提供快捷入口。比如用户在选购水果的过程中，随时都有可能需要快速进到购物车页面，所以提供一个购物车页面的快捷入口就比较合适了。<br>时刻思考用户场景，能够帮助产品提升易用性。当然，思考用户的使用场景，考虑的问题不止以上提到的三点，还有很多细节部分，主要是为了养成这样一种习惯，但是需要注意，不能陷入自己的主观臆想中不能自拔，可以听听用户的反馈，否则容易设计出“我觉得很好用的产品”。</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>产品设计其实远不止这么简单，本文提到的只是设计过程中的一两种方法，也只是浅尝辄止，需要每个设计师自己往更深层次去剖析。</p>
-</div><div class="tags"><a href="/tags/交互理论/">-交互理论</a></div><div class="post-nav"><a href="/2017/08/14/清风/" class="pre">清风</a><a href="/2017/06/15/禧咖啡用户端改版－设计总结/" class="next">禧咖啡用户端改版－设计总结</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://yoursite.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Kategorien</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/设计总结/" style="font-size: 15px;">-设计总结</a> <a href="/tags/交互基础/" style="font-size: 15px;">-交互基础</a> <a href="/tags/交互理论/" style="font-size: 15px;">-交互理论</a> <a href="/tags/交互基础/" style="font-size: 15px;">交互基础</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Letzte</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/08/14/清风/">清风</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/10/从需求到原型，产品该如何设计与思考？/">从需求到原型，产品该如何设计与思考？</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/15/禧咖啡用户端改版－设计总结/">禧咖啡用户端改版－设计总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/［交互基础］系列之解析移动端导航设计模式/">［交互基础］系列之解析移动端导航设计模式</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/22/禧咖啡商家咖啡师版2-0改版设计总结/">禧咖啡商家咖啡师版2.0改版设计总结</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Blogroll</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">雨无声.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/交互理论/" rel="tag"># -交互理论</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/15/禧咖啡用户端改版－设计总结/" rel="next" title="禧咖啡用户端改版－设计总结">
+                <i class="fa fa-chevron-left"></i> 禧咖啡用户端改版－设计总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/14/清风/" rel="prev" title="清风">
+                清风 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="雨无声" />
+          <p class="site-author-name" itemprop="name">雨无声</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#需求与原型之间有一堵墙？"><span class="nav-number">1.</span> <span class="nav-text">需求与原型之间有一堵墙？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计规划：需求到原型之间的过渡？"><span class="nav-number">2.</span> <span class="nav-text">设计规划：需求到原型之间的过渡？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#过程一：组织信息架构"><span class="nav-number">2.1.</span> <span class="nav-text">过程一：组织信息架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#过程二：设定任务流程"><span class="nav-number">2.2.</span> <span class="nav-text">过程二：设定任务流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一个思考：思考用户场景"><span class="nav-number">2.3.</span> <span class="nav-text">一个思考：思考用户场景</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">雨无声</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
