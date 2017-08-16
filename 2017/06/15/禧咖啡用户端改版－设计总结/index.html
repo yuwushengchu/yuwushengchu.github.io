@@ -1,122 +1,432 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta name="description" content="yanm1ng&#39;s blog">
-  <meta name="keyword" content="hexo-theme, vuejs">
-  
-    <link rel="shortcut icon" href="/css/images/logo.png">
-  
-  <title>
-    
-      禧咖啡用户端改版－设计总结 | 雨无声
-    
-  </title>
-  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/plugins/gitment.css">
-  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
-  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
-  <script src="/js/qrious.js"></script>
-<script src="/js/gitment.js"></script>
-</head>
-  <body>
-    <header class="header fixed-header">
-  <div class="header-container">
-    <a class="home-link" href="/">
-      <div class="logo"></div>
-      <span>雨无声</span>
-    </a>
-    <ul class="right-list">
-      
-        <li class="list-item">
-          
-            <a href="/" class="item-link">Home</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/tags/" class="item-link">Tags</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/archives/" class="item-link">Archives</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/project/" class="item-link">Projects</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/about/" class="item-link">About</a>
-          
-        </li>
-      
-    </ul>
-    <div class="menu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </div>
-    <div class="menu-mask">
-      <ul class="menu-list">
-        
-          <li class="menu-item">
-            
-              <a href="/" class="menu-link">Home</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/tags/" class="menu-link">Tags</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/archives/" class="menu-link">Archives</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/project/" class="menu-link">Projects</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/about/" class="menu-link">About</a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</header>
 
-    <div id="article-banner">
-  <h2>禧咖啡用户端改版－设计总结</h2>
-  <p class="post-date">2017-06-15</p>
-  <div class="arrow-down">
-    <a href="javascript:;"></a>
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="-设计总结," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="keywords" content="-设计总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="禧咖啡用户端改版－设计总结">
+<meta property="og:url" content="http://yoursite.com/2017/06/15/禧咖啡用户端改版－设计总结/index.html">
+<meta property="og:site_name" content="雨无声">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/image_2/1.png">
+<meta property="og:image" content="http://yoursite.com/image_2/2.png">
+<meta property="og:image" content="http://yoursite.com/image_2/3.png">
+<meta property="og:image" content="http://yoursite.com/image_2/4.png">
+<meta property="og:image" content="http://yoursite.com/image_2/5.png">
+<meta property="og:image" content="http://yoursite.com/image_2/6.png">
+<meta property="og:image" content="http://yoursite.com/image_2/7.png">
+<meta property="og:image" content="http://yoursite.com/image_2/8.png">
+<meta property="og:image" content="http://yoursite.com/image_2/9.png">
+<meta property="og:image" content="http://yoursite.com/image_2/10.png">
+<meta property="og:image" content="http://yoursite.com/image_2/11.png">
+<meta property="og:image" content="http://yoursite.com/image_2/12.png">
+<meta property="og:image" content="http://yoursite.com/image_2/13.png">
+<meta property="og:image" content="http://yoursite.com/image_2/14.png">
+<meta property="og:image" content="http://yoursite.com/image_2/15.png">
+<meta property="og:image" content="http://yoursite.com/image_2/16.png">
+<meta property="og:image" content="http://yoursite.com/image_2/17.png">
+<meta property="og:image" content="http://yoursite.com/image_2/18.png">
+<meta property="og:image" content="http://yoursite.com/image_2/19.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_1.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_2.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_3.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_4.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_5.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_6.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_7.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_8.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_9.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_10.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_11.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_12.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_13.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_14.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_15.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_16.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_17.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_18.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_19.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_20.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_21.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_22.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_23.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_24.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_25.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_26.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_27.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_28.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_29.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_30.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_31.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_32.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_33.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_34.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_35.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_36.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_37.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_38.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_39.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_40.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_41.png">
+<meta property="og:image" content="http://yoursite.com/image_2/prototype_42.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_1.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_2.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_3.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_4.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_5.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_6.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_7.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_8.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_9.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_10.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_11.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_12.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_13.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_14.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_15.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_16.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_17.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_18.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_19.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_20.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_21.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_22.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_23.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_24.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_25.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_26.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_27.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_28.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_29.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_30.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_31.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_32.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_33.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_34.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_35.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_36.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_37.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_38.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_39.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_40.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_41.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_42.png">
+<meta property="og:image" content="http://yoursite.com/image_2/UI_43.png">
+<meta property="og:updated_time" content="2017-08-14T01:24:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="禧咖啡用户端改版－设计总结">
+<meta name="twitter:image" content="http://yoursite.com/image_2/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/06/15/禧咖啡用户端改版－设计总结/"/>
+
+
+
+
+
+  <title>禧咖啡用户端改版－设计总结 | 雨无声</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">雨无声</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
-<main class="app-body">
-  <article class="post-article">
-    <section class="markdown-content"><p><img src="/image_2/1.png" alt="image"><br><a id="more"></a></p>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/15/禧咖啡用户端改版－设计总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="雨无声">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雨无声">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">禧咖啡用户端改版－设计总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-15T17:26:29+08:00">
+                2017-06-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="/image_2/1.png" alt="image"><br><a id="more"></a></p>
 <h3 id="一、项目背景"><a href="#一、项目背景" class="headerlink" title="一、项目背景"></a>一、项目背景</h3><h4 id="1-产品介绍"><a href="#1-产品介绍" class="headerlink" title="1.产品介绍"></a>1.产品介绍</h4><p>禧咖啡外卖系统是一个在线订购咖啡外卖的应用平台。主要包括用户端、商家端（包括商家网页端、咖啡师端、配送员端）、官方后台这三大模块。禧咖啡用户端开发了iOS&amp;Android及微信公众号版本，产品核心是<strong>致力于为用户提供优质的咖啡订购服务</strong>。<br><img src="/image_2/2.png" alt="image"></p>
 <h4 id="2-服务人群"><a href="#2-服务人群" class="headerlink" title="2.服务人群"></a>2.服务人群</h4><p>本公司主打产品是B端产品，服务于企业员工用户的工作需求。基于拥有较为庞大的企业员工用户群体，我们考虑为企业用户在工作之余，提供一些生活服务。禧咖啡项目由此而来：工作之余，点一杯咖啡，小憩一下；点几杯咖啡，几位同事坐下来讨论一下工作；为你的他（她）点一杯咖啡，不失为一种慰问。我们的定位人群从企业员工用户开始，旨在为他们缓解紧张的工作压力。当然，也不止于此，包括更多的喜爱咖啡的人。</p>
 <h4 id="3-设计流程"><a href="#3-设计流程" class="headerlink" title="3.设计流程"></a>3.设计流程</h4><p><img src="/image_2/3.png" alt="image"></p>
@@ -147,169 +457,360 @@
 <h3 id="五、交互设计文档"><a href="#五、交互设计文档" class="headerlink" title="五、交互设计文档"></a>五、交互设计文档</h3><p>产品整个交互逻辑说明、信息结构、流程说明和页面细节等都归纳在交互文档中做为项目的结果输出，在此不再赘述，可查看以下文档说明。<br><img src="/image_2/prototype_1.png" alt="image"><br><img src="/image_2/prototype_2.png" alt="image"><br><img src="/image_2/prototype_3.png" alt="image"><br><img src="/image_2/prototype_4.png" alt="image"><br><img src="/image_2/prototype_5.png" alt="image"><br><img src="/image_2/prototype_6.png" alt="image"><br><img src="/image_2/prototype_7.png" alt="image"><br><img src="/image_2/prototype_8.png" alt="image"><br><img src="/image_2/prototype_9.png" alt="image"><br><img src="/image_2/prototype_10.png" alt="image"><br><img src="/image_2/prototype_11.png" alt="image"><br><img src="/image_2/prototype_12.png" alt="image"><br><img src="/image_2/prototype_13.png" alt="image"><br><img src="/image_2/prototype_14.png" alt="image"><br><img src="/image_2/prototype_15.png" alt="image"><br><img src="/image_2/prototype_16.png" alt="image"><br><img src="/image_2/prototype_17.png" alt="image"><br><img src="/image_2/prototype_18.png" alt="image"><br><img src="/image_2/prototype_19.png" alt="image"><br><img src="/image_2/prototype_20.png" alt="image"><br><img src="/image_2/prototype_21.png" alt="image"><br><img src="/image_2/prototype_22.png" alt="image"><br><img src="/image_2/prototype_23.png" alt="image"><br><img src="/image_2/prototype_24.png" alt="image"><br><img src="/image_2/prototype_25.png" alt="image"><br><img src="/image_2/prototype_26.png" alt="image"><br><img src="/image_2/prototype_27.png" alt="image"><br><img src="/image_2/prototype_28.png" alt="image"><br><img src="/image_2/prototype_29.png" alt="image"><br><img src="/image_2/prototype_30.png" alt="image"><br><img src="/image_2/prototype_31.png" alt="image"><br><img src="/image_2/prototype_32.png" alt="image"><br><img src="/image_2/prototype_33.png" alt="image"><br><img src="/image_2/prototype_34.png" alt="image"><br><img src="/image_2/prototype_35.png" alt="image"><br><img src="/image_2/prototype_36.png" alt="image"><br><img src="/image_2/prototype_37.png" alt="image"><br><img src="/image_2/prototype_38.png" alt="image"><br><img src="/image_2/prototype_39.png" alt="image"><br><img src="/image_2/prototype_40.png" alt="image"><br><img src="/image_2/prototype_41.png" alt="image"><br><img src="/image_2/prototype_42.png" alt="image"></p>
 <h3 id="六、交互-amp-UI设计文档"><a href="#六、交互-amp-UI设计文档" class="headerlink" title="六、交互&amp;UI设计文档"></a>六、交互&amp;UI设计文档</h3><p>在交互文档的基础上，输出交互&amp;UI设计文档<br><img src="/image_2/UI_1.png" alt="image"><br><img src="/image_2/UI_2.png" alt="image"><br><img src="/image_2/UI_3.png" alt="image"><br><img src="/image_2/UI_4.png" alt="image"><br><img src="/image_2/UI_5.png" alt="image"><br><img src="/image_2/UI_6.png" alt="image"><br><img src="/image_2/UI_7.png" alt="image"><br><img src="/image_2/UI_8.png" alt="image"><br><img src="/image_2/UI_9.png" alt="image"><br><img src="/image_2/UI_10.png" alt="image"><br><img src="/image_2/UI_11.png" alt="image"><br><img src="/image_2/UI_12.png" alt="image"><br><img src="/image_2/UI_13.png" alt="image"><br><img src="/image_2/UI_14.png" alt="image"><br><img src="/image_2/UI_15.png" alt="image"><br><img src="/image_2/UI_16.png" alt="image"><br><img src="/image_2/UI_17.png" alt="image"><br><img src="/image_2/UI_18.png" alt="image"><br><img src="/image_2/UI_19.png" alt="image"><br><img src="/image_2/UI_20.png" alt="image"><br><img src="/image_2/UI_21.png" alt="image"><br><img src="/image_2/UI_22.png" alt="image"><br><img src="/image_2/UI_23.png" alt="image"><br><img src="/image_2/UI_24.png" alt="image"><br><img src="/image_2/UI_25.png" alt="image"><br><img src="/image_2/UI_26.png" alt="image"><br><img src="/image_2/UI_27.png" alt="image"><br><img src="/image_2/UI_28.png" alt="image"><br><img src="/image_2/UI_29.png" alt="image"><br><img src="/image_2/UI_30.png" alt="image"><br><img src="/image_2/UI_31.png" alt="image"><br><img src="/image_2/UI_32.png" alt="image"><br><img src="/image_2/UI_33.png" alt="image"><br><img src="/image_2/UI_34.png" alt="image"><br><img src="/image_2/UI_35.png" alt="image"><br><img src="/image_2/UI_36.png" alt="image"><br><img src="/image_2/UI_37.png" alt="image"><br><img src="/image_2/UI_38.png" alt="image"><br><img src="/image_2/UI_39.png" alt="image"><br><img src="/image_2/UI_40.png" alt="image"><br><img src="/image_2/UI_41.png" alt="image"><br><img src="/image_2/UI_42.png" alt="image"><br><img src="/image_2/UI_43.png" alt="image"></p>
 <h3 id="七、开发跟进"><a href="#七、开发跟进" class="headerlink" title="七、开发跟进"></a>七、开发跟进</h3><p>一份完备的交互输出文档，是设计与开发有效沟通的必不可少的环节。但实际工作中，文档沟通总是有障碍：简单了，很多细节说不清；复杂了，设计者写得累死开发还不一定仔细看。所以，最有效的办法：坐到开发旁边，每天检查成果，有不符合规范的地方直接沟通并修改，省去繁冗的文档和邮件，可以大大提高效率。当然这种方法仅限于代码没有还原设计的情况，如果涉及设计变更，还是需要使用邮件等方法告知项目中其他相关人员。</p>
-</section>
-    
-      <div class="tags">
-        <span>Tags:</span>
-        
-  <a href="/tags#-设计总结" >
-    <span class="tag-code">-设计总结</span>
-  </a>
 
-      </div>
-    
-    <div class="money-like">
-      <div class="reward-btn">
-        赏
-        <span class="money-code">
-          <span class="alipay-code">
-            <div class="code-image"></div>
-            <b>使用支付宝打赏</b>
-          </span>
-          <span class="wechat-code">
-            <div class="code-image"></div>
-            <b>使用微信打赏</b>
-          </span>
-        </span>
-      </div>
-      <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
-    </div>
-    <div class="qrcode">
-      <canvas id="share-qrcode"></canvas>
-      <p class="notice">扫描二维码，分享此文章</p>
-    </div>
-    
-      <div id="comments"></div>
-    
-  </article>
-</main>
-
-<script>
-  (function () {
-    var url = 'http://yoursite.com/2017/06/15/禧咖啡用户端改版－设计总结/';
-    var banner = 'undefined'
-    if (banner) {
-      $('#article-banner').css({
-        'background-image': 'url(' + banner + ')'
-      })
-    } else {
-      $('#article-banner').geopattern(url)
-    }
-    $('.header').removeClass('fixed-header')
-
-     // error image
-    $(".markdown-content img").on('error', function() {
-      $(this).attr('src', 'http://file.muyutech.com/error-img.png') 
-    })
-
-    // zoom image
-    $(".markdown-content img").on('click', function() {
-      var src = $(this).attr('src')
-      var imageW = $(this).width()
-      var imageH = $(this).height()
       
-      var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
-      zoom = zoom < 1 ? 1 : zoom
-      zoom = zoom > 2 ? 2 : zoom
-      var transY = (($(window).height() - imageH) / 2).toFixed(2)
+    </div>
+    
+    
+    
 
-      $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
-      $('.image-view-wrap').addClass('wrap-active')
-      $('.image-view-wrap img').css({
-        'width': `${imageW}`,
-        'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
-      })
-      $('html').css('overflow', 'hidden')
+    
 
-      $('.image-view-wrap').on('click', function() {
-        $(this).remove()
-        $('html').attr('style', '')
-      })
-    })
+    
 
-    // qrcode
-    var qr = new QRious({
-      element: document.getElementById('share-qrcode'),
-      value: document.location.href
-    });
+    
 
-    // gitment
-    var gitmentConfig = "yanm1ng";
-    if (gitmentConfig != "undefined") {
-      var gitment = new Gitment({
-        id: "禧咖啡用户端改版－设计总结",
-        owner: "yanm1ng",
-        repo: "yanm1ng.github.io",
-        oauth: {
-          client_id: "0f87e490e00ee3fd87ef",
-          client_secret: "4a9d2b148e7971c2201ad12131ce8bf8159ccd2e"
-        },
-        theme: {
-          render(state, instance) {
-            const container = document.createElement('div')
-            container.lang = "en-US"
-            container.className = 'gitment-container gitment-root-container'
-            container.appendChild(instance.renderHeader(state, instance))
-            container.appendChild(instance.renderEditor(state, instance))
-            container.appendChild(instance.renderComments(state, instance))
-            container.appendChild(instance.renderFooter(state, instance))
-            return container;
-          }
-        }
-      })
-      gitment.render(document.getElementById('comments'))
-    }
-  })();
-</script>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/设计总结/" rel="tag"># -设计总结</a>
+          
+        </div>
+      
 
-    <div class="scroll-top">
-  <span class="arrow-icon"></span>
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/24/［交互基础］系列之解析移动端导航设计模式/" rel="next" title="［交互基础］系列之解析移动端导航设计模式">
+                <i class="fa fa-chevron-left"></i> ［交互基础］系列之解析移动端导航设计模式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/10/从需求到原型，产品该如何设计与思考？/" rel="prev" title="从需求到原型，产品该如何设计与思考？">
+                从需求到原型，产品该如何设计与思考？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="雨无声" />
+          <p class="site-author-name" itemprop="name">雨无声</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、项目背景"><span class="nav-number">1.</span> <span class="nav-text">一、项目背景</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-产品介绍"><span class="nav-number">1.1.</span> <span class="nav-text">1.产品介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-服务人群"><span class="nav-number">1.2.</span> <span class="nav-text">2.服务人群</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-设计流程"><span class="nav-number">1.3.</span> <span class="nav-text">3.设计流程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、为什么要改版？"><span class="nav-number">2.</span> <span class="nav-text">二、为什么要改版？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-核心功能混乱"><span class="nav-number">2.1.</span> <span class="nav-text">1.核心功能混乱</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-收藏功能多余"><span class="nav-number">2.2.</span> <span class="nav-text">2.收藏功能多余</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-页面层级问题，订单页面隐藏太深"><span class="nav-number">2.3.</span> <span class="nav-text">3.页面层级问题，订单页面隐藏太深</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-商品图UI辨识度不高"><span class="nav-number">2.4.</span> <span class="nav-text">4.商品图UI辨识度不高</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-页面反馈缺少"><span class="nav-number">2.5.</span> <span class="nav-text">5.页面反馈缺少</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-订单备注功能不完整"><span class="nav-number">2.6.</span> <span class="nav-text">6.订单备注功能不完整</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-消息反馈"><span class="nav-number">2.7.</span> <span class="nav-text">7.消息反馈</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-部分功能缺失"><span class="nav-number">2.8.</span> <span class="nav-text">8.部分功能缺失</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、明确设计目标"><span class="nav-number">3.</span> <span class="nav-text">三、明确设计目标</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-调整核心功能"><span class="nav-number">3.1.</span> <span class="nav-text">1.调整核心功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-完善辅助功能"><span class="nav-number">3.2.</span> <span class="nav-text">2.完善辅助功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-优化用户体验"><span class="nav-number">3.3.</span> <span class="nav-text">3.优化用户体验</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、提出设计方案"><span class="nav-number">4.</span> <span class="nav-text">四、提出设计方案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-商品选择页面设计分析"><span class="nav-number">4.1.</span> <span class="nav-text">1.商品选择页面设计分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-订单页面"><span class="nav-number">4.2.</span> <span class="nav-text">2.订单页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-个人信息页面"><span class="nav-number">4.3.</span> <span class="nav-text">3.个人信息页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-完善反馈机制"><span class="nav-number">4.4.</span> <span class="nav-text">4.完善反馈机制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、交互设计文档"><span class="nav-number">5.</span> <span class="nav-text">五、交互设计文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、交互-amp-UI设计文档"><span class="nav-number">6.</span> <span class="nav-text">六、交互&UI设计文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七、开发跟进"><span class="nav-number">7.</span> <span class="nav-text">七、开发跟进</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">雨无声</span>
+
+  
 </div>
-    <footer class="app-footer">
-  <p class="copyright">
-    &copy; 2017 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
-    <br>
-    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
-  </p>
-</footer>
 
-<script>
-  function async(u, c) {
-    var d = document, t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-    s.parentNode.insertBefore(o, s);
+
+  <div class="powered-by">
+    由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  </div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">
+    主题 &mdash;
+    <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+      NexT.Muse
+    </a>
+  </div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
   }
 </script>
-<script>
-  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
-    FastClick.attach(document.body);
-  })
-</script>
 
-<script>
-  var hasLine = 'true';
-  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
-    $('figure pre').each(function(i, block) {
-      var figure = $(this).parents('figure');
-      if (hasLine == 'false') {
-        figure.find('.gutter').hide();
-      }
-      var lang = figure.attr('class').split(' ')[1] || 'code';
-      var codeHtml = $(this).html();
-      var codeTag = document.createElement('code');
-      codeTag.className = lang;
-      codeTag.innerHTML = codeHtml;
-      $(this).attr('class', '').empty().html(codeTag);
-      figure.attr('data-lang', lang.toUpperCase());
-      hljs.highlightBlock(block);
-    });
-  })
-</script>
-<!-- Baidu Tongji -->
 
-<script src="/js/script.js"></script>
-  </body>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
 </html>
