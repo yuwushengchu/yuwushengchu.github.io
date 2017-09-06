@@ -102,7 +102,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/image_5/1.png">
 <meta property="og:image" content="http://yoursite.com/image_5/2.png">
-<meta property="og:updated_time" content="2017-09-06T10:37:24.000Z">
+<meta property="og:updated_time" content="2017-09-06T10:48:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="［交互基础］系列之移动端页面加载详解">
 <meta name="twitter:image" content="http://yoursite.com/image_5/1.png">
@@ -338,6 +338,12 @@
         <p><img src="/image_5/1.png" alt="image"><br><a id="more"></a></p>
 <h3 id="一、人机交互"><a href="#一、人机交互" class="headerlink" title="一、人机交互"></a>一、人机交互</h3><p>交互设计是定义、设计人造系统行为的设计领域。这是一个非常广的领域，我们在这里，只探讨IT产品的人机界面交互。举一个例子，用户点击一个确定按钮，完成了表单的提交，此时APP提示用户“提交成功”，这是用户与APP之间的一个交互过程。从点击按钮到弹出提示，这个过程发生了？在交互层面又需要考虑哪些问题呢？</p>
 <h3 id="二、用户——客户端——服务器"><a href="#二、用户——客户端——服务器" class="headerlink" title="二、用户——客户端——服务器"></a>二、用户——客户端——服务器</h3><p><img src="/image_5/2.png" alt="image"><br>用户与客户端进行人机交互，如上述的例子，点击确定按钮，客户端将用户的操作转化为相应的指令，向服务器请求数据，若网络和服务器正常，服务器返还数据到客户端，用户看到自己操作所引发的结果。在这个过程中，涉及到<strong>用户与客户端之间的交互</strong>和<strong>客户端与服务端之间的数据传输</strong>这两个部分。<br>从用户点击确定按钮后到服务器返回数据到客户端，这个过程中需要耗费一定的时间，我们需要呈现一个加载的过程来告诉用户APP正在做什么，以缓解用户的焦虑情绪。当服务器返回数据以后，客户端需要提示用户”提交成功”，以告知用户操作的结果。当然，还会有异常的情况，客户端与服务器之间传输数据的过程中，可能遭遇网络不稳定、服务器异常等情况，这也需要及时告知用户，以避免用户不知所措、产生焦虑，影响体验。<br>加载发生的原理都是一致的，即用户与客户端发生人机交互以后，请求数据与返回数据的过程。但是<strong>在不同的场景下</strong>，需要考虑不同的加载处理方式。</p>
+<h3 id="三、加载模式"><a href="#三、加载模式" class="headerlink" title="三、加载模式"></a>三、加载模式</h3><p>页面加载的两种模式：<strong>同步加载</strong>和<strong>异步加载</strong>。</p>
+<h4 id="1-同步加载"><a href="#1-同步加载" class="headerlink" title="1.同步加载"></a>1.同步加载</h4><p><strong>定义：</strong>同步加载请求执行某一任务，在该请求返回数据之前，请求端什么也不干就在等待，直至该请求返回数据，再执行下一步操作。（例如产品设计完成之后才能交付给开发。）<br><strong>场景：</strong>登录注册、扫码支付、提交订单、上传资料、修改资料等需要验证、提交信息的情况或下一步的结果走向与当前操作相关的情况，也称顺序操作。（例如登录需验证账号信息，成功了就进入应用主页，失败则仍停留在登录界面）<br><strong>特点：</strong>及时性，加载完成/失败会立即得到反馈结果，上下步操作的关联性强，更易于实现。但是如果加载速度太慢，很可能长时间停留在加载页面，使用户产生烦躁的负面等待情绪。</p>
+<h4 id="2-异步加载"><a href="#2-异步加载" class="headerlink" title="2.异步加载"></a>2.异步加载</h4><p><strong>定义</strong>：异步加载请求执行某一任务的同时，可以继续执行下一操作，等到收到返回数据，再处理该任务。（例如你要烧水和扫地，为了提高效率，先烧水，再在烧水的过程中扫地，等水烧开了，再去处理开水。）<br><strong>场景：</strong>不涉及重要资料和顺序操作的数据加载都适合异步加载。如大量图片、视频的页面，长列表数据的列表页，内容的详情页面等。<br><strong>特点：</strong>有效得提升了用户体验，页面的跳转和加载动画让用户觉得反馈很及时，增强了操作的流畅度。但是需要处理好操作之间的关联性，否则用户容易产生疑惑。</p>
+<h3 id="四、加载策略及表现形式"><a href="#四、加载策略及表现形式" class="headerlink" title="四、加载策略及表现形式"></a>四、加载策略及表现形式</h3><p>运用加载模式的两种原理，可以延伸出多种加载策略以对应不同的场景需要。加载策略是方法，加载模式是原理。需要注意的是，不同的加载策略运用了不同的加载模式，并不是简单的一对一的关系，要学会配合使用。</p>
+<h4 id="1-启动页加载"><a href="#1-启动页加载" class="headerlink" title="1.启动页加载"></a>1.启动页加载</h4><p>打开APP有一个加载的过程，在这个过程中，可能对同步加载和异步加载均有涉及。<br>同步加载时的常用策略：加载完某些数据才能进入应用，适合对某些关键数据进行检查，例如检查用户的身份信息，此种策略是为了保证一些关键数据的可控性。<br>异步加载的常用策略：进入应用内再加载使用的数据，例如进入应用再加载首页，可以提高进入应用的速度。</p>
+<h4 id="2-当前页加载"><a href="#2-当前页加载" class="headerlink" title="2.当前页加载"></a>2.当前页加载</h4><p>当前页加载大多属于同步加载。<br><strong>定义：</strong>点击触发操作后，在当前页进行数据加载并提示，数据加载成功后，才能进入下一页面。（网络异常的话，就只能待在当前页面。）<br><strong>场景：</strong>适用于需要判断及验证处理的情况，或下一步走向与当前操作结果相关的情况。例如登录注册、表单提交等。<br><strong>作用：</strong>加载完成/失败会立即得到反馈结果，上下步操作的关联性强，更易于实现。<br><strong>缺点：</strong>加载时间超过3S，容易使用户产生焦虑的情绪。<br><strong>表现形式：</strong>如下图所示，登录过程中使用多态按钮表示验证过程，保存收货地址可使用模态加载的方式过渡表单的提交过程。</p>
 
       
     </div>
@@ -501,7 +507,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、人机交互"><span class="nav-text">一、人机交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、用户——客户端——服务器"><span class="nav-text">二、用户——客户端——服务器</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、人机交互"><span class="nav-text">一、人机交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、用户——客户端——服务器"><span class="nav-text">二、用户——客户端——服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、加载模式"><span class="nav-text">三、加载模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-同步加载"><span class="nav-text">1.同步加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-异步加载"><span class="nav-text">2.异步加载</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、加载策略及表现形式"><span class="nav-text">四、加载策略及表现形式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-启动页加载"><span class="nav-text">1.启动页加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-当前页加载"><span class="nav-text">2.当前页加载</span></a></li></ol></li></ol></div>
             
 
           </div>
