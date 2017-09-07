@@ -102,6 +102,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/image_5/1.png">
 <meta property="og:image" content="http://yoursite.com/image_5/2.png">
+<meta property="og:image" content="http://yoursite.com/image_5/13.png">
 <meta property="og:image" content="http://yoursite.com/image_5/3.png">
 <meta property="og:image" content="http://yoursite.com/image_5/4.png">
 <meta property="og:image" content="http://yoursite.com/image_5/5.png">
@@ -112,7 +113,7 @@
 <meta property="og:image" content="http://yoursite.com/image_5/10.png">
 <meta property="og:image" content="http://yoursite.com/image_5/11.png">
 <meta property="og:image" content="http://yoursite.com/image_5/12.png">
-<meta property="og:updated_time" content="2017-09-07T02:11:37.000Z">
+<meta property="og:updated_time" content="2017-09-07T03:07:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="［交互基础］系列之移动端页面加载详解">
 <meta name="twitter:image" content="http://yoursite.com/image_5/1.png">
@@ -352,7 +353,7 @@
 <h3 id="1-同步加载"><a href="#1-同步加载" class="headerlink" title="1.同步加载"></a>1.同步加载</h3><p><strong>定义：</strong>同步加载请求执行某一任务，在该请求返回数据之前，请求端什么也不干就在等待，直至该请求返回数据，再执行下一步操作。（例如产品设计完成之后才能交付给开发。）<br><strong>场景：</strong>登录注册、扫码支付、提交订单、上传资料、修改资料等需要验证、提交信息的情况或下一步的结果走向与当前操作相关的情况，也称顺序操作。（例如登录需验证账号信息，成功了就进入应用主页，失败则仍停留在登录界面）<br><strong>特点：</strong>及时性，加载完成/失败会立即得到反馈结果，上下步操作的关联性强，更易于实现。但是如果加载速度太慢，很可能长时间停留在加载页面，使用户产生烦躁的负面等待情绪。</p>
 <h3 id="2-异步加载"><a href="#2-异步加载" class="headerlink" title="2.异步加载"></a>2.异步加载</h3><p><strong>定义</strong>：异步加载请求执行某一任务的同时，可以继续执行下一操作，等到收到返回数据，再处理该任务。（例如你要烧水和扫地，为了提高效率，先烧水，再在烧水的过程中扫地，等水烧开了，再去处理开水。）<br><strong>场景：</strong>不涉及重要资料和顺序操作的数据加载都适合异步加载。如大量图片、视频的页面，长列表数据的列表页，内容的详情页面等。<br><strong>特点：</strong>有效得提升了用户体验，页面的跳转和加载动画让用户觉得反馈很及时，增强了操作的流畅度。但是需要处理好操作之间的关联性，否则用户容易产生疑惑。</p>
 <h2 id="四、加载策略及表现形式"><a href="#四、加载策略及表现形式" class="headerlink" title="四、加载策略及表现形式"></a>四、加载策略及表现形式</h2><p>运用加载模式的两种原理，可以延伸出多种加载策略以对应不同的场景需要。加载策略是方法，加载模式是原理。需要注意的是，不同的加载策略运用了不同的加载模式，并不是简单的一对一的关系，要学会配合使用。</p>
-<h3 id="1-启动页加载"><a href="#1-启动页加载" class="headerlink" title="1.启动页加载"></a>1.启动页加载</h3><p>打开APP有一个加载的过程，在这个过程中，可能对同步加载和异步加载均有涉及。<br>同步加载时的常用策略：加载完某些数据才能进入应用，适合对某些关键数据进行检查，例如检查用户的身份信息，此种策略是为了保证一些关键数据的可控性。<br>异步加载的常用策略：进入应用内再加载使用的数据，例如进入应用再加载首页，可以提高进入应用的速度。</p>
+<h3 id="1-启动页加载"><a href="#1-启动页加载" class="headerlink" title="1.启动页加载"></a>1.启动页加载</h3><p>打开APP有一个加载的过程，在这个过程中，可能对同步加载和异步加载均有涉及。<br>同步加载时的常用策略：加载完某些数据才能进入应用，适合对某些关键数据进行检查，例如检查用户的身份信息，此种策略是为了保证一些关键数据的可控性。<br>异步加载的常用策略：进入应用内再加载使用的数据，例如进入应用再加载首页，可以提高进入应用的速度。<br>APP启动页显示的长短取决于需要加载的内容的多少。一些APP在启动页之后还设置了广告页面（一般可跳过），则考虑更多的是广告营销等商业目的。<img src="/image_5/13.png" alt="image"></p>
 <h3 id="2-当前页加载"><a href="#2-当前页加载" class="headerlink" title="2.当前页加载"></a>2.当前页加载</h3><p>当前页加载大多属于同步加载。<br><strong>定义：</strong>点击触发操作后，在当前页进行数据加载并提示，数据加载成功后，才能进入下一页面。（网络异常的话，就只能待在当前页面。）<br><strong>场景：</strong>适用于需要判断及验证处理的情况，或下一步走向与当前操作结果相关的情况。例如登录注册、表单提交等。<br><strong>作用：</strong>加载完成/失败会立即得到反馈结果，上下步操作的关联性强，更易于实现。<br><strong>缺点：</strong>加载时间超过3S，容易使用户产生焦虑的情绪。<br><strong>表现形式：</strong>如下图所示，登录过程中使用多态按钮表示验证过程，保存收货地址可使用模态加载的方式过渡表单的提交过程。<img src="/image_5/3.png" alt="image"></p>
 <h3 id="3-下一页加载"><a href="#3-下一页加载" class="headerlink" title="3.下一页加载"></a>3.下一页加载</h3><p>下一页加载大多属于异步加载。由于下一页的内容类型、内容量等因素的影响，又有多种处理方式。<br><strong>定义：</strong>点击触发操作后，页面跳转至下一页并加载内容。<br><strong>场景：</strong>大多数应用的内容页面都采用这种方式。<br><strong>作用：</strong>极大的增强了流畅的感觉，毕竟在当前页卡住与在下一页卡住是两种不同的感受。网络异常的情况下，用户点击触发操作，若一直停留在当前页面没有变化，很容易产生烦躁的负面情绪；而跳转到下一页加载，一定程度上可以缓解负面情绪，因为在用户发出指令的同时，应用的页面就发生了跳转，让用户看到了操作带来的变化，只是因为网络差没有尽快的加载成功而已。</p>
 <h4 id="3-1-整体加载"><a href="#3-1-整体加载" class="headerlink" title="3.1.整体加载"></a>3.1.整体加载</h4><p><strong>定义：</strong>一次性加载完所有的内容后，再展示给用户。<br><strong>场景：</strong>适用于页面的内容较为单一的情况，同时在H5页面中大多采用这种加载方式。<br><strong>作用：</strong>保证了内容的整体性，能系统性的阅读所有内容。<br><strong>缺点：</strong>等待感显得比较强烈，超过3S容易使用户产生焦虑的情绪。因此，在地铁等信号不好的地方使用手机网页获取内容的体验是比较差的。<br><strong>表现形式：</strong>如下图所示，APP的加载过程通常使用能强化品牌效果的趣味动画，或者简单的循环加载、菊花加载样式，但趣味性动画的设计更能吸引用户，减轻用户等待时的焦虑感。H5页面通常使用进度条来表示加载的进度。<img src="/image_5/4.png" alt="image"></p>
