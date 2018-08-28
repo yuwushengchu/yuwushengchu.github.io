@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="-交互理论," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="keywords" content="-交互理论">
+<meta property="og:type" content="article">
+<meta property="og:title" content="服务设计-面试流程体验优化">
+<meta property="og:url" content="http://yoursite.com/2018/02/18/服务设计-面试流程体验优化/index.html">
+<meta property="og:site_name" content="雨无声">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/image_7/1.png">
+<meta property="og:image" content="http://yoursite.com/image_7/2.png">
+<meta property="og:image" content="http://yoursite.com/image_7/3.png">
+<meta property="og:image" content="http://yoursite.com/image_7/4.png">
+<meta property="og:image" content="http://yoursite.com/image_7/5.png">
+<meta property="og:image" content="http://yoursite.com/image_7/6.png">
+<meta property="og:image" content="http://yoursite.com/image_7/7.png">
+<meta property="og:image" content="http://yoursite.com/image_7/8.png">
+<meta property="og:image" content="http://yoursite.com/image_7/9.png">
+<meta property="og:image" content="http://yoursite.com/image_7/10.png">
+<meta property="og:image" content="http://yoursite.com/image_7/11.png">
+<meta property="og:image" content="http://yoursite.com/image_7/12.png">
+<meta property="og:image" content="http://yoursite.com/image_7/13.png">
+<meta property="og:image" content="http://yoursite.com/image_7/14.png">
+<meta property="og:image" content="http://yoursite.com/image_7/15.png">
+<meta property="og:image" content="http://yoursite.com/image_7/16.png">
+<meta property="og:image" content="http://yoursite.com/image_7/17.png">
+<meta property="og:image" content="http://yoursite.com/image_7/18.png">
+<meta property="og:image" content="http://yoursite.com/image_7/19.png">
+<meta property="og:image" content="http://yoursite.com/image_7/20.png">
+<meta property="og:image" content="http://yoursite.com/image_7/21.png">
+<meta property="og:image" content="http://yoursite.com/image_7/22.png">
+<meta property="og:image" content="http://yoursite.com/image_7/23.png">
+<meta property="og:updated_time" content="2018-08-28T11:38:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="服务设计-面试流程体验优化">
+<meta name="twitter:image" content="http://yoursite.com/image_7/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/02/18/服务设计-面试流程体验优化/"/>
+
+
+
+
+
+  <title>服务设计-面试流程体验优化 | 雨无声</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">雨无声</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/18/服务设计-面试流程体验优化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="雨无声">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/head/1.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="雨无声">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">服务设计-面试流程体验优化</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-18T17:26:29+08:00">
+                2018-02-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/02/18/服务设计-面试流程体验优化/" class="leancloud_visitors" data-flag-title="服务设计-面试流程体验优化">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="/image_7/1.png" alt="image"><br> <a id="more"></a></p>
+<h2 id="一、项目介绍"><a href="#一、项目介绍" class="headerlink" title="一、项目介绍"></a>一、项目介绍</h2><h3 id="1-项目背景"><a href="#1-项目背景" class="headerlink" title="1.项目背景"></a>1.项目背景</h3><p>当前社会人才资源是重中之重，人才的争夺越来越激烈。面试做为企业与人才的第一次正面接触，<br>是给人才留下印象并决定是否入职的重要环节。当前很多企业的面试流程或多或少都存在一些问<br>题，让面试者感到不舒服、没有受到尊重。因此，我们考虑以本公司为例，针对面试服务流程做<br>一次全面的诊断分析，优化其体验。</p>
+<h3 id="2-项目目的"><a href="#2-项目目的" class="headerlink" title="2.项目目的"></a>2.项目目的</h3><ul>
+<li>对公司：通过面试流程中贴心的服务，体现良好的公司形象，增强对人才的吸引力。</li>
+<li>对面试者：使面试者在面试环节感受到体贴的服务，感受到尊重，产生对公司的归属感。<br><img src="/image_7/2.png" alt="image"></li>
+</ul>
+<h3 id="3-项目挑战"><a href="#3-项目挑战" class="headerlink" title="3.项目挑战"></a>3.项目挑战</h3><p>我们从以下几个方面分析了面临的挑战。</p>
+<h4 id="3-1多角色"><a href="#3-1多角色" class="headerlink" title="3.1多角色"></a>3.1多角色</h4><p>涉及到多个角色（利益相关者），包括面试者、HR和面试官；</p>
+<h4 id="3-2全链路"><a href="#3-2全链路" class="headerlink" title="3.2全链路"></a>3.2全链路</h4><p>需要考虑面试的整个环节，并以面试者为服务对象，挖掘面试者在整个面试流程中遇到的痛点，<br>并从公司角度提出可行性解决方案；</p>
+<h4 id="3-3多角色"><a href="#3-3多角色" class="headerlink" title="3.3多角色"></a>3.3多角色</h4><p>从成本、人力及有效性的角度出发，给予一套真正可实施可行性的落地方案。</p>
+<h3 id="4-我的角色"><a href="#4-我的角色" class="headerlink" title="4.我的角色"></a>4.我的角色</h3><p>项目成员：余诗乐、胡文语</p>
+<p>本项目由我与公司另一位设计同事胡文语共同完成。在整个项目流程中，我们共同参与了用户访<br>谈，我主要负责了访谈结果分析、体验地图分析，并共同完成了初步方案，该同事对方案进行用<br>户验证并完善，我做了后期的整理工作，最终得出完整的项目方案。</p>
+<h2 id="二、项目流程"><a href="#二、项目流程" class="headerlink" title="二、项目流程"></a>二、项目流程</h2><p>我们在整个项目的设计过程中，一直贯穿使用以服务设计驱动为导向设计的方法，经历了确定参<br>与角色→访谈调研→体验地图分析→输出方案→评估方案→方案落地的完整过程。<br><img src="/image_7/3.png" alt="image"></p>
+<h2 id="三、确定参与角色"><a href="#三、确定参与角色" class="headerlink" title="三、确定参与角色"></a>三、确定参与角色</h2><p>在整个面试流程中，涉及面试者、HR、面试官这三个角色。</p>
+<ul>
+<li>服务对象：面试者</li>
+<li>服务提供者：HR、面试官</li>
+</ul>
+<h2 id="四、访谈调研"><a href="#四、访谈调研" class="headerlink" title="四、访谈调研"></a>四、访谈调研</h2><h3 id="1-HR访谈"><a href="#1-HR访谈" class="headerlink" title="1.HR访谈"></a>1.HR访谈</h3><p>HR做为面试流程的重要参与者，是面试者最主要的联系人和接待人，直接给予面试者对公司的第<br>一印象。 同时，HR对公司的面试流程及面试者可能遇到的问题必然是最清楚的。因此，我们邀<br>请公司的HR，做了一次访谈。</p>
+<h4 id="1-1访谈目的"><a href="#1-1访谈目的" class="headerlink" title="1.1访谈目的"></a>1.1访谈目的</h4><p>通过对HR的访谈，以求了解以下重要问题：公司具体的面试流程，HR如何评价面试者，面试者可能遇到哪些痛点。</p>
+<h4 id="1-2访谈问题及结果"><a href="#1-2访谈问题及结果" class="headerlink" title="1.2访谈问题及结果"></a>1.2访谈问题及结果</h4><ul>
+<li>问题1：我们公司的面试流程具体是怎么的？<br>结果：公司有制定招聘流程规范条例，其中包括寻找人才及人才面试的流程，HR按照此流程操作。HR将公司的招聘流程规范提供给了我们参考（只有word版的），如下图所示<br><img src="/image_7/4.png" alt="image"></li>
+<li>问题2：HR对面试者的评价标准是怎么的？<br>结果：评价标准包含以下多个方面的评估：面试者的人品（包括简历的真实性）、与职位的匹<br>配度（学历、工作经验、行业、技能等）、个人的职业规划（包括工作的态度、上进心）、忠<br>诚度（稳定性）、性格、与需求方的匹配度。</li>
+<li>问题3：面试过程中通常会询问哪些问题？<br>结果：询问的问题并不固定，主要是从评价标准的维度考虑，并结合实际情况提问。</li>
+</ul>
+<p>问题4：面试者在面试过程中，通常会遇到哪些问题？<br>结果：HR主要反馈了以下几个问题：1、面试者到了园区，一时半会儿找不着公司的具体位置；<br>2、面试过程中，面试者可能产生紧张情绪，影响发挥。</p>
+<h3 id="2-面试官访谈"><a href="#2-面试官访谈" class="headerlink" title="2.面试官访谈"></a>2.面试官访谈</h3><p>面试官负责了最重要的面试过程，从专业的角度对面试者进行考核。我们邀请了几位公司的BU合<br>伙人，做了一次访谈。</p>
+<h4 id="2-1访谈目的"><a href="#2-1访谈目的" class="headerlink" title="2.1访谈目的"></a>2.1访谈目的</h4><p>通过对面试官的访谈，了解面试官如何进行面试、如何评价面试者、面试者在面试时有哪些痛点。</p>
+<ul>
+<li>问题1：面试官通常如何进行面试？<br>结果：首先进行自我介绍，围绕事先准备好的问题对面试者进行询问，然后解答面试者的疑问，<br>最后结束面试，让HR过来接待面试者。</li>
+<li>问题2：面试官如何评价面试者？<br>结果：评价标准包含以下多个方面的评估：专业能力水平（专业水平是否符合岗位要求最为重<br>要）、面试者的性格特点、个人的职业规划等。</li>
+<li>问题3：面试者在面试时有哪些痛点？<br>结果：1.显得过于紧张，由此导致发挥不佳；2.确实回答不上来面试问题；3.专业技能不符合要<br>求。</li>
+</ul>
+<h3 id="3-面试者访谈"><a href="#3-面试者访谈" class="headerlink" title="3.面试者访谈"></a>3.面试者访谈</h3><p>面试者是面试过程中的核心参与者和服务对象。</p>
+<h4 id="3-1访谈目的"><a href="#3-1访谈目的" class="headerlink" title="3.1访谈目的"></a>3.1访谈目的</h4><p>通过对面试者的访谈，深入了解面试者关于面试方面的情况，包括面试前的准备工作、面试遇到<br>哪些问题或不爽的地方、哪些因素让面试者感到贴心等方面。</p>
+<p>####<br>访谈提纲<br>针对面试者的访谈是整个访谈任务中最重要的，我们整理了如下访谈提纲：</p>
+<ul>
+<li>访谈对象：面试者</li>
+<li>人数：3人</li>
+<li>访谈对象来源：公司同事</li>
+<li>访谈对象信息：技术岗位1名（工作3年）、产品岗位1名（工作2年）、设计岗位1名（实习）<br><img src="/image_7/5.png" alt="image"></li>
+<li>访谈方式：个别、面对面访谈</li>
+<li>访谈问题设计及结果整理</li>
+</ul>
+<h4 id="3-2访谈问题整理及结果分析"><a href="#3-2访谈问题整理及结果分析" class="headerlink" title="3.2访谈问题整理及结果分析"></a>3.2访谈问题整理及结果分析</h4><p><img src="/image_7/6.png" alt="image"></p>
+<h2 id="五、体验地图分析"><a href="#五、体验地图分析" class="headerlink" title="五、体验地图分析"></a>五、体验地图分析</h2><h3 id="1-场景分析"><a href="#1-场景分析" class="headerlink" title="1.场景分析"></a>1.场景分析</h3><p>我们从面试者的角度，考虑面试的整个流程，并进行场景划分。</p>
+<h4 id="1-1梳理主要场景"><a href="#1-1梳理主要场景" class="headerlink" title="1.1梳理主要场景"></a>1.1梳理主要场景</h4><p>主要场景：前往公司→到达公司→离开公司</p>
+<h4 id="1-2梳理细分场景"><a href="#1-2梳理细分场景" class="headerlink" title="1.2梳理细分场景"></a>1.2梳理细分场景</h4><p>细分场景是对主要场景的进一步细分，以便提炼服务触点，进一步分析。从对HR的访谈过程中，<br>我们已经得知了公司的招聘流程：</p>
+<ul>
+<li>智联招聘，51job上搜索合适简历</li>
+<li>询问用人部门相关面试人员有空时间</li>
+<li>电话邀约，确定面试时间，提前一天告知用人部门</li>
+<li>应聘者到达后，填写应聘人员登记表（技术人员做测试题，做完后需批改选择题部分）</li>
+<li>打印出简历，告知相关部门人员面试者已到，做好面试准备</li>
+<li>进行面试</li>
+</ul>
+<p>这个招聘流程从公司角度出发，大致涵盖了面试的整个过程，但还是一个比较精简、粗略的流程。<br>我们要提升面试者的面试体验，必须从面试者的角度出发，细化服务场景，以寻找可优化的服务<br>触点。结合了对HR、面试者的访谈结果，我们初步梳理了如下图左侧的15个细分场景及对应面<br>试者的心情。整理优化的过程中发现，部分环节之间存在近似连贯的现象，最后针对部分环节做<br>了合并的处理，得到最右侧的11个细分场景。如下表所示：<br><img src="/image_7/7.png" alt="image"><br>整理得到主要场景对应的细分场景：</p>
+<ul>
+<li>前往公司：收到面试确认电话→收到面试信息短信→准备面试，规划前往；</li>
+<li>到达公司：到达公司→HR接待→等待面试→HR面试→面试官面试→面试结束；</li>
+<li>离开公司：离开公司，等待面试结果→收到面试结果。</li>
+</ul>
+<p>如下表所示：<br><img src="/image_7/8.png" alt="image"><br>根据分析得出的主要场景、细分场景，我们初步绘制了体验地图的框架，并填充了主要场景、细<br>分场景等内容。结合面试者在不同场景下的心情变化，绘制了面试者的情绪曲线，并填充了心情。<br>如下图所示：<br><img src="/image_7/9.png" alt="image"></p>
+<h3 id="2-梳理服务触点"><a href="#2-梳理服务触点" class="headerlink" title="2.梳理服务触点"></a>2.梳理服务触点</h3><p>触点，是用户与产品或服务相接触、发生互动的地方，也是优化流程体验的关键点。触点分为物<br>理的、数字的、人际的这三类，从这三个角度出发，结合访谈结果，深度剖析细分场景下的服务<br>触点。（参见本页下方企业面试流程体验地图。）</p>
+<h3 id="3-分析用户需求"><a href="#3-分析用户需求" class="headerlink" title="3.分析用户需求"></a>3.分析用户需求</h3><p>用户需求在本案例中，即是面试者在面试流程中的期望、情绪、想法及感觉。我们结合了面试者<br>访谈中反馈得到的需求、也结合了已整理得到的服务触点所映射的需求，整理得到了每一个细分<br>场景下，对应的面试者的需求。（参见本页下方企业面试流程体验地图。）</p>
+<h3 id="4-体验痛点分析"><a href="#4-体验痛点分析" class="headerlink" title="4.体验痛点分析"></a>4.体验痛点分析</h3><p>我们通过对服务触点、用户需求及访谈结果的分析，提炼出了面试者体验痛点（提炼出流程中的<br>体验痛点后，即可系统性、针对性得研究解决方案）。整理如下图所示：<br><img src="/image_7/10.png" alt="image"></p>
+<h2 id="六、输出方案"><a href="#六、输出方案" class="headerlink" title="六、输出方案"></a>六、输出方案</h2><p>结合上述的体验地图分析，存在的体验痛点已经全面、系统得呈现出来了。针对这些体验痛点，<br>首先要对其做一个进一步的整理，其次我们应该开始思考向HR、面试官提出系统性的解决方案。</p>
+<h3 id="1-体验痛点归类"><a href="#1-体验痛点归类" class="headerlink" title="1.体验痛点归类"></a>1.体验痛点归类</h3><p>通过体验地图的全链路分析，我们发现存在的体验痛点很多，但很多体验痛点其实相似或者是同<br>一类型的问题。对问题进行整理归类，可以更加清晰地分析解决方案。整理如下所示：<br><img src="/image_7/11.png" alt="image"></p>
+<h3 id="2-HR、面试官行为分析"><a href="#2-HR、面试官行为分析" class="headerlink" title="2.HR、面试官行为分析"></a>2.HR、面试官行为分析</h3><p>要提出系统性的解决方案，首先我们必须分析在每一个细分场景下，对应的HR、面试官的行为应<br>该是怎样的。如下表所示：<br><img src="/image_7/12.png" alt="image"></p>
+<h3 id="3-输出物分析"><a href="#3-输出物分析" class="headerlink" title="3.输出物分析"></a>3.输出物分析</h3><p>根据以上的分析，我们必然要有一些输出物做为解决方案：</p>
+<ul>
+<li>首先尤为明显的就是，需要输出一份面试规范手册。大致内容是：规范面试流程，对HR如何接<br>待面试者给出标准及要求，对面试过程及面试反馈中的一些问题给出标准等。这样做的话，既<br>表现了对面试者的尊重，同时又提升了公司的形象，树立良好的口碑。进行面试.</li>
+<li>面试邮件是面试者参加面试的凭证，也是面试者了解面试流程及信息、了解公司的一个十分重<br>要的数字触点。面试邮件的原则是：清晰地阐述面试流程及信息，其次让面试者了解公司的相<br>关信息，展示公司的品牌形象。</li>
+<li>很多公司都有填写应聘人员登记表的流程，从提升公司形象的角度出发，它可以设计得更好一<br>点。而且我们发现，这张表需要填的信息太多了，我们向HR了解过，确实可以针对一些信息做<br>删减。</li>
+<li>我们发现一个问题，公司的HR和面试官在对面试者的面试表现做评价的时候，并没有相应的面<br>试评价表。或是口头交流评价，或者自己书写一下评价，缺乏一个规范、严谨的评价流程，这<br>样也无法对该面试者的面试表现做完整的存档处理。因此我们需要一份HR评价表和面试官评价<br>表。</li>
+</ul>
+<h3 id="4-方案输出"><a href="#4-方案输出" class="headerlink" title="4.方案输出"></a>4.方案输出</h3><h4 id="4-1面试规范手册"><a href="#4-1面试规范手册" class="headerlink" title="4.1面试规范手册"></a>4.1面试规范手册</h4><p>在整理面试规范手册内容的时候，也从网上找了一些面试规范手册参考，写的大都非常具有专业<br>性。而我考虑那样写难度比较大，我觉得应该从解决体验痛点的角度出发，针对分析得出的痛点，<br>来整理这份面试规范手册。其内容如下：<br><img src="/image_7/13.png" alt="image"></p>
+<h4 id="4-2面试邮件"><a href="#4-2面试邮件" class="headerlink" title="4.2面试邮件"></a>4.2面试邮件</h4><p>面试邀请邮件如下图所示，核心的优化点在于：</p>
+<ul>
+<li>增加公司区位图，方便面试者了解公司详细位置，也是为了解决很多面试者到达公司附近后，<br>找不到具体位置的痛点询问用人部门相关面试人员有空时间</li>
+<li>增加公司网站链接，方便面试者更加深入地了解公司信息</li>
+<li>优化品牌形象<br><img src="/image_7/14.png" alt="image"></li>
+</ul>
+<p>公司之前采用电话回复的形式反馈面试者，但当面告诉面试者未通过会显得比较尴尬。我们考虑<br>采用邮件回复的形式，如下图所示，其核心要点如下：</p>
+<ul>
+<li>阐述面试未通过的原因，并友善地提出建议</li>
+<li>避免直接电话回绝的尴尬</li>
+<li>优化品牌形象<br><img src="/image_7/15.png" alt="image"></li>
+</ul>
+<p>上述邮件提供邮件模板（电子版）做为输出物，HR可将邮件模板拷贝至邮箱，修改对应内容部分<br>即可使用。</p>
+<h4 id="4-3应聘人员登记表"><a href="#4-3应聘人员登记表" class="headerlink" title="4.3应聘人员登记表"></a>4.3应聘人员登记表</h4><p>对应聘人员登记表进行再设计，如下图所示：</p>
+<ul>
+<li>重新配色，增强布局层次感，强化品牌形象</li>
+<li>删减了部分次要信息（因为员工入职后，还会要填写个人信息表）<br><img src="/image_7/16.png" alt="image"></li>
+</ul>
+<p>应聘人员登记表将打印出来做为输出物之一。</p>
+<h4 id="4-4面试评价表"><a href="#4-4面试评价表" class="headerlink" title="4.4面试评价表"></a>4.4面试评价表</h4><p>在设计评价表的时候，发现HR评价、面试官评价完全可以做到一张表里，这样得到的结果也更<br>加直观，也方便存档。面试评价表如下图所示 ，其核心要点如下：</p>
+<ul>
+<li>不同岗位的评价维度存在很大差异，这样的话，我们的评价表必然是以模板的形式输出。考虑<br>到可编辑性，评价表最终要以word模板的形式输出;</li>
+<li>评价维度提供两种评价方式：1.使用默认评价条件（优、良、中、差、劣）；2.编辑评价条件，<br>对于某些评价维度使用更加准确的评价条件，但注意要与评分相对应;</li>
+<li>HR可根据实际岗位，与对应岗位的负责人协商，编辑对应的评价维度及条件即可;</li>
+<li>强调品牌形象<br><img src="/image_7/17.png" alt="image"></li>
+</ul>
+<h2 id="七、验证及落地"><a href="#七、验证及落地" class="headerlink" title="七、验证及落地"></a>七、验证及落地</h2><h3 id="1-方案验证"><a href="#1-方案验证" class="headerlink" title="1.方案验证"></a>1.方案验证</h3><p>得到初步的方案后，我们找了公司的HR及一些同事做方案验证，发现存在一些问题。</p>
+<p>首先，面试流程不够详细。现在我们已经得到了大概的流程，但是每个流程下，具体怎么做并没有给出标准。比如说，与面试者电话沟通，具体要阐述哪些内容？要做哪些准备？要注意哪些问题？这些之前确实没有很好得考虑到，其他流程也面临着相似的问题。</p>
+<p>其次，既然是做为面试规范，缺失面试技巧部分的规范指导。这是很重要的一块，关系到面试结果的判断（人才是否留用）。比如如何判断面试者表述的真实性、消除面试偏见陷阱等。</p>
+<h3 id="2-方案完善及落地"><a href="#2-方案完善及落地" class="headerlink" title="2.方案完善及落地"></a>2.方案完善及落地</h3><p>我们在已有的面试规范手册的基础上，通过咨询HR，参考一些面试规范在交流、接待等方面的<br>标准经验，查阅了一些相关的面试技巧资料，在以下方面做了优化：</p>
+<ul>
+<li>面试流程（从流程的内容要点、相关的准备事项、注意事项这三个方面细分）</li>
+<li>如何判断面试者内容表述的真实性</li>
+<li>面试偏见陷阱</li>
+</ul>
+<p>得到面试规范手册如下：（面试邮件、应聘人员登记表、面试评价表均包含在附件内容中。）<br><img src="/image_7/18.png" alt="image"><br><img src="/image_7/19.png" alt="image"><br><img src="/image_7/20.png" alt="image"><br><img src="/image_7/21.png" alt="image"></p>
+<h4 id="2-1附件"><a href="#2-1附件" class="headerlink" title="2.1附件"></a>2.1附件</h4><p><img src="/image_7/22.png" alt="image"><br><img src="/image_7/23.png" alt="image"><br>面试规范手册、应聘人员登记表、面试评价表等将打印输出，面试邮件以电子版的形式输出。修<br>改过后的方案，得到了公司及HR的肯定，将在公司投入使用。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/交互理论/" rel="tag"># -交互理论</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/06/［交互基础］系列之移动端页面加载详解/" rel="next" title="［交互基础］系列之移动端页面加载详解">
+                <i class="fa fa-chevron-left"></i> ［交互基础］系列之移动端页面加载详解
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/25/【交互设计笔记】——如何进行需求分析/" rel="prev" title="【交互设计笔记】————如何进行需求分析">
+                【交互设计笔记】————如何进行需求分析 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/head/1.jpeg"
+               alt="雨无声" />
+          <p class="site-author-name" itemprop="name">雨无声</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、项目介绍"><span class="nav-text">一、项目介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-项目背景"><span class="nav-text">1.项目背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-项目目的"><span class="nav-text">2.项目目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-项目挑战"><span class="nav-text">3.项目挑战</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1多角色"><span class="nav-text">3.1多角色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2全链路"><span class="nav-text">3.2全链路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3多角色"><span class="nav-text">3.3多角色</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-我的角色"><span class="nav-text">4.我的角色</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、项目流程"><span class="nav-text">二、项目流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、确定参与角色"><span class="nav-text">三、确定参与角色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、访谈调研"><span class="nav-text">四、访谈调研</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-HR访谈"><span class="nav-text">1.HR访谈</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1访谈目的"><span class="nav-text">1.1访谈目的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2访谈问题及结果"><span class="nav-text">1.2访谈问题及结果</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-面试官访谈"><span class="nav-text">2.面试官访谈</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1访谈目的"><span class="nav-text">2.1访谈目的</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-面试者访谈"><span class="nav-text">3.面试者访谈</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1访谈目的"><span class="nav-text">3.1访谈目的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2访谈问题整理及结果分析"><span class="nav-text">3.2访谈问题整理及结果分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、体验地图分析"><span class="nav-text">五、体验地图分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-场景分析"><span class="nav-text">1.场景分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1梳理主要场景"><span class="nav-text">1.1梳理主要场景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2梳理细分场景"><span class="nav-text">1.2梳理细分场景</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-梳理服务触点"><span class="nav-text">2.梳理服务触点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-分析用户需求"><span class="nav-text">3.分析用户需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-体验痛点分析"><span class="nav-text">4.体验痛点分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、输出方案"><span class="nav-text">六、输出方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-体验痛点归类"><span class="nav-text">1.体验痛点归类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-HR、面试官行为分析"><span class="nav-text">2.HR、面试官行为分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-输出物分析"><span class="nav-text">3.输出物分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-方案输出"><span class="nav-text">4.方案输出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1面试规范手册"><span class="nav-text">4.1面试规范手册</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2面试邮件"><span class="nav-text">4.2面试邮件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3应聘人员登记表"><span class="nav-text">4.3应聘人员登记表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4面试评价表"><span class="nav-text">4.4面试评价表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、验证及落地"><span class="nav-text">七、验证及落地</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-方案验证"><span class="nav-text">1.方案验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-方案完善及落地"><span class="nav-text">2.方案完善及落地</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1附件"><span class="nav-text">2.1附件</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">雨无声</span>
+
+  
+</div>
+
+
+<!--
+
+  <div class="powered-by">
+    由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  </div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">
+    主题 &mdash;
+    <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+      NexT.Pisces
+    </a>
+  </div>
+
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("iBdOVSAa1N1cHlYqBQB1r6rg-gzGzoHsz", "nAoTjuExXzHUFDD1KL6G78q5");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
